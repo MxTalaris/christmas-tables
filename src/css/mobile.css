@@ -1,0 +1,78 @@
+/* Mobile overrides — only active on narrow screens */
+
+@media (max-width: 768px) {
+
+    /* Fix: background image leaving a black gap at the bottom.
+       Mobile browsers resize the visible viewport as the address bar
+       shows/hides, and 100vh doesn't track that. 100dvh does. */
+    html, body {
+        height: 100vh;
+        height: 100dvh;
+    }
+
+    .app-page {
+        height: 100vh;
+        height: 100dvh;
+    }
+
+    .table-background {
+        top: 0;
+        left: 0;
+    }
+
+    /* Table for 2: keep only the top and bottom plate, centered and bigger.
+       Vertical axis (top/bottom + rotation) is left untouched. */
+    .table-dishes img:nth-child(2),
+    .table-dishes img:nth-child(4) {
+        display: none;
+    }
+
+    .table-dishes img:nth-child(1),
+    .table-dishes img:nth-child(3) {
+        left: 50%;
+        width: 45vw;
+    }
+
+    /* Foods: switch from a horizontal row to a vertical stack, centered. */
+    .food-pos-1 {
+        top: 25%;
+        left: 50%;
+        width: 32vw;
+    }
+
+    .food-pos-2 {
+        top: 35%;
+        left: 25%;
+        width: 26vw;
+    }
+
+    .food-pos-3 {
+        top: 35%;
+        left: 75%;
+        width: 26vw;
+    }
+
+    .food-pos-4 {
+        top: 50%;
+        left: 50%;
+        width: 42vw;
+    }
+
+    .food-pos-5 {
+        top: 65%;
+        left: 25%;
+        width: 26vw;
+    }
+
+    .food-pos-6 {
+        top: 65%;
+        left: 75%;
+        width: 26vw;
+    }
+
+    .food-pos-7 {
+        top: 75%;
+        left: 50%;
+        width: 32vw;
+    }
+}
