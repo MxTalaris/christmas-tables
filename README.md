@@ -4,9 +4,9 @@ This repository contain a front‑end-only web app for the ELFO Hideout "Global 
 
 ## About this project
 
-The ELFO Hideout (in PT-BR: Esconderijo ELFO) is a Brazilian Christmas-dedicated museum in Natal, a Brazilian city named after Christmas.
+The ELFO Hideout (in PT-BR: Esconderijo ELFO) was a Brazilian Christmas-dedicated museum in Natal, a Brazilian city named after Christmas.
 
-This is the code that runs on the interactive kiosk that displays dining tables set for Christmas celebrations around the globe. Because of the nature of the device it is used, the web app is intended to run entirely offline, with minimum to no use of internet connection.
+This is the code that used to run on the interactive kiosk that displays dining tables set for Christmas celebrations around the globe. Because of the nature of the device it is used, the web app is intended to run entirely offline, with minimum to no use of internet connection.
 
 ## How to run locally (offline)
 - Copy the repository to the target machine.
