@@ -75,4 +75,25 @@
         left: 50%;
         width: 32vw;
     }
+
+    /* Fix: continent modals lay out 4 country cards in a rigid,
+       non-wrapping row sized for a wide desktop modal. Now that the
+       viewport reflects the real (narrow) screen width instead of a
+       scaled-down desktop canvas, they no longer fit and overflow. */
+    .col-container {
+        flex-wrap: wrap;
+    }
+
+    .country-selector.col-4-1 {
+        box-sizing: border-box;
+        width: 50%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Same root cause: modal text was sized relative to a wide
+       desktop modal and is now too large for a narrow phone screen. */
+    .modal-content {
+        font-size: 1em;
+    }
 }
